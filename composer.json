@@ -1,6 +1,6 @@
 {
     "name": "franicon/widget-package",
-    "description": "widget package manager to ouload the widget details",
+    "description": "widget package manager to outload the widget details",
     "autoload-dev": {
         "psr-4": {
             "Franicon\\WidgetPackage\\Tests\\": "tests/"
