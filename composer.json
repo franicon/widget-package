@@ -1,0 +1,34 @@
+{
+    "name": "franicon/widget-package",
+    "description": "widget package manager to ouload the widget details",
+    "autoload-dev": {
+        "psr-4": {
+            "Franicon\\WidgetPackage\\Tests\\": "tests/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Franicon\\WidgetPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abayomi Aluko",
+            "email": "franicons@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^7.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Franicon\\WidgetPackage\\WidgetPackageServiceProvider",
+                "Franicon\\WidgetPackage\\RouteServiceProvider"
+            ],
+            "aliases": {
+                "WidgetPackage":   "Franicon\\WidgetPackage\\Facades\\WidgetPackage"
+            }
+        }
+    }
+}
